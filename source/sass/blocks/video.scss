@@ -1,0 +1,29 @@
+.video {
+  margin: 0 20px 33px;
+}
+
+.video__header {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__description {
+  padding: 0 5px;
+  margin: 0;
+  margin-bottom: 38px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__player {
+  width: 280px;
+  height: 177px;
+}

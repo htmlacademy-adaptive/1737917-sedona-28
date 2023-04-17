@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+// базовые настройки
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+@import "./base/visually-hidden.scss";
+
+//блоки компонентов
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/button.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/video.scss";
+@import "./blocks/response.scss";
+@import "./blocks/control.scss";
+

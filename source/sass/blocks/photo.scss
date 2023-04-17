@@ -1,0 +1,34 @@
+.photo__image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.photo__name {
+  margin: 0;
+
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.photo__author-name {
+  font-style: normal;
+}
+
+.photo__likes {
+  display: flex;
+  align-items: flex-end;
+  height: 26px;
+  padding-left: 37px;
+  margin: 0;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона: Фото и видео</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="" alt="Логотип сайта города Седона.">
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="./img/logo.svg" width="185" height="96"
+          alt="Логотип сайта города Седона.">
+      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -35,7 +37,7 @@
     </div>
   </header>
 
-  <main class="main-container">
+  <main class="main-container main-container--inner">
     <h1 class="main-container__title">Фото и видео</h1>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея фотографий города Седона и его окрестностей</h2>
@@ -45,7 +47,8 @@
       <div class="gallery__list">
         <figure class="gallery__item photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="" alt="Шоссе, уходящее за горизонт">
+            <img class="photo__image" src="./img/road-desktop.jpg" width="1200" height="400"
+              alt="Шоссе, уходящее за горизонт">
           </a>
           <figcaption class="photo__description">
             <p class="photo__name">Неродные просторы</p>
@@ -55,7 +58,8 @@
         </figure>
         <figure class="gallery__item photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="" alt="Кактус с желтыми цветочками">
+            <img class="photo__image" src="./img/plant-desktop.jpg" width="400" height="267"
+              alt="Кактус с желтыми цветочками">
           </a>
           <figcaption class="photo__description">
             <p class="photo__name">Местная растительность</p>
@@ -65,7 +69,8 @@
         </figure>
         <figure class="gallery__item photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="" alt="Дорога-серпантин в горах, заросших деревьями">
+            <img class="photo__image" src="./img/mountain-road-desktop.jpg" width="400" height="267"
+              alt="Дорога-серпантин в горах, заросших деревьями">
           </a>
           <figcaption class="photo__description">
             <p class="photo__name">Дорога на север</p>
@@ -75,7 +80,7 @@
         </figure>
         <figure class="gallery__item photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="" alt="Мост дьявола">
+            <img class="photo__image" src="./img/bridge-desktop.jpg" width="400" height="267" alt="Мост дьявола">
           </a>
           <figcaption class="photo__description">
             <p class="photo__name">Мост дьявола</p>
@@ -89,10 +94,10 @@
       <h2 class="visually-hidden">Видеопрезентация о городе Седона и его окрестностях</h2>
       <p class="video__header">Все еще сомневаетесь?</p>
       <p class="video__description">
-        Смотрите видеопрезентацию и скорее за билетами, пока они<br />
-        не подорожали в очередной раз!
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="video__player" src="" preload="none"></video>
+      <video class="video__player" src="./img/video-desktop.jpg" width="800" height="500"
+        poster="./img/video-desktop.jpg"></video>
     </section>
   </main>
 

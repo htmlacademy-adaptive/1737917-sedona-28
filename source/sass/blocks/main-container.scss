@@ -1,0 +1,14 @@
+.main-container__title {
+  margin: 0 20px 35px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-container--inner .main-container__title {
+  margin-bottom: 25px;
+}

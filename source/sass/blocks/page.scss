@@ -1,0 +1,15 @@
+.page__body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 100%;
+  margin: 0;
+
+  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
