@@ -1,0 +1,34 @@
+.advantages {
+  margin-bottom: 38px;
+}
+
+.advantages__header {
+  margin-bottom: 32px;
+}
+
+.advantages__title {
+  margin: 0 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.advantages__image {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.advantages__sublist {
+  padding: 0;
+  margin: 23px 18px 21px;
+
+  list-style: none;
+}

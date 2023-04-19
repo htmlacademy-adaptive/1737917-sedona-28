@@ -1,0 +1,28 @@
+.main-header {
+  min-height: 214px;
+  margin-bottom: 32px;
+
+  &--form {
+    margin-bottom: 36px;
+  }
+}
+
+.main-header__image {
+  width: 320px;
+  height: 389px;
+  object-fit: cover;
+
+  background-color: #a1957a;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--inner {
+    position: absolute;
+    top: 0;
+    // z-index: -1;
+
+    height: 214px;
+  }
+}
+

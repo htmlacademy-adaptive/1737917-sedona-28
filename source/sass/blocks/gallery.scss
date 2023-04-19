@@ -1,0 +1,27 @@
+.gallery {
+  margin: 0 20px 17px;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 44px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__item {
+  padding: 24px 0 25px;
+  margin: 0;
+
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
