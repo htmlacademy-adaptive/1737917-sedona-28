@@ -7,6 +7,20 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 124px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 358px 28px;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .main-container--inner .main-container__title {
