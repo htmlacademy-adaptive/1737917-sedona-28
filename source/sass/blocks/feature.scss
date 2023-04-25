@@ -16,9 +16,10 @@
   }
 
   &--underline {
-    border-bottom: 1px solid #d6d6d6;
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid #d6d6d6;
+    }
   }
-
 }
 
 .feature__title {

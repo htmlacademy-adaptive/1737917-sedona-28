@@ -1,5 +1,13 @@
 .video {
   margin: 0 20px 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 200px 120px;
+  }
 }
 
 .video__header {
@@ -12,6 +20,14 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 102px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 177px 25px;
+  }
 }
 
 .video__description {
@@ -21,9 +37,28 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 102px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 177px 68px;
+  }
 }
 
 .video__player {
   width: 280px;
   height: 177px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }

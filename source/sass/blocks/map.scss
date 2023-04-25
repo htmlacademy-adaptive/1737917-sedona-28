@@ -1,9 +1,21 @@
 .map {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .map__image {
   width: 320px;
   height: 350px;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
