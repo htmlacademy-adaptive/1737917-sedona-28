@@ -30,6 +30,10 @@
   line-height: 26px;
   text-transform: none;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 10px 16px;
+  }
 }
 
 .control__input--radio:checked + .control__mark {
@@ -40,7 +44,13 @@
   width: 46px;
   height: 46px;
 
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
   border-radius: 4px;
+}
+
+.control__input--checkbox:checked + .control__mark {
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }

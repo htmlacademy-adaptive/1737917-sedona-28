@@ -21,6 +21,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     margin: 0 166px 25px;
@@ -59,5 +60,6 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 }
