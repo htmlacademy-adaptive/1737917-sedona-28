@@ -85,18 +85,24 @@
   &:nth-child(3) {
     @media (min-width: $tablet-width) {
       grid-area: 4/1/5/2;
+
+      background-color: #eeeeee;
     }
   }
 
   &:nth-child(4) {
     @media (min-width: $tablet-width) {
       grid-area: 4/2/5/3;
+
+      background-color: #eeeeee;
     }
   }
 
   &:nth-child(5) {
     @media (min-width: $tablet-width) {
       grid-area: 4/3/5/4;
+
+      background-color: #eeeeee;
     }
   }
 }
@@ -125,5 +131,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0;
   }
 }
