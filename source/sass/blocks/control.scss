@@ -5,6 +5,11 @@
   padding-left: 46px;
 
   cursor: pointer;
+
+  &:focus-within {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .control__mark {

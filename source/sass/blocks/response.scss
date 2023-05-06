@@ -306,6 +306,11 @@
 
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .response__field-list {
@@ -344,6 +349,11 @@
     display: block;
     width: 768px;
     margin: 0 auto;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
   }
 }
 
