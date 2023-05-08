@@ -56,7 +56,7 @@
         grid-area: 1/1/2/2;
       }
 
-      & > .advantages__image {
+      & picture {
         grid-area: 1/2/2/4;
       }
 
@@ -76,7 +76,7 @@
         grid-area: 1/3/2/4;
       }
 
-      & > .advantages__image {
+      & > picture {
         grid-area: 1/1/2/3;
       }
     }
