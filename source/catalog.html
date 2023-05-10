@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона: Фото и видео</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -64,8 +68,12 @@
         <div class="gallery__list">
           <figure class="gallery__item photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="./img/road-desktop.jpg" width="1200" height="400"
-                alt="Шоссе, уходящее за горизонт">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/road-desktop.jpg 1x, ./img/road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/road-tablet.jpg 1x, ./img/road-tablet@2x.jpg 2x">
+                <img class="photo__image" src="./img/road-mobile.jpg" width="1200" height="400"
+                  srcset="./img/road-mobile@2x.jpg 2x" alt="Шоссе, уходящее за горизонт">
+              </picture>
             </a>
             <figcaption class="photo__description">
               <p class="photo__name">Неродные просторы</p>
@@ -75,8 +83,12 @@
           </figure>
           <figure class="gallery__item photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="./img/plant-desktop.jpg" width="400" height="267"
-                alt="Кактус с желтыми цветочками">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/plant-desktop.jpg 1x, ./img/plant-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/plant-tablet.jpg 1x, ./img/plant-tablet@2x.jpg 2x">
+                <img class="photo__image" src="./img/plant-mobile.jpg" width="400" height="267"
+                  srcset="./img/plant-mobile@2x.jpg 2x" alt="Кактус с желтыми цветочками">
+              </picture>
             </a>
             <figcaption class="photo__description">
               <p class="photo__name">Местная растительность</p>
@@ -86,8 +98,14 @@
           </figure>
           <figure class="gallery__item photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="./img/mountain-road-desktop.jpg" width="400" height="267"
-                alt="Дорога-серпантин в горах, заросших деревьями">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/mountain-road-desktop.jpg 1x, ./img/mountain-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/mountain-road-tablet.jpg 1x, ./img/mountain-road-tablet@2x.jpg 2x">
+                <img class="photo__image" src="./img/mountain-road-mobile.jpg" width="400" height="267"
+                  srcset="./img/mountain-road-mobile@2x.jpg 2x" alt="Дорога-серпантин в горах, заросших деревьями">
+              </picture>
             </a>
             <figcaption class="photo__description">
               <p class="photo__name">Дорога на север</p>
@@ -97,7 +115,13 @@
           </figure>
           <figure class="gallery__item photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="./img/bridge-desktop.jpg" width="400" height="267" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/bridge-desktop.jpg 1x, ./img/bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/bridge-tablet.jpg 1x, ./img/bridge-tablet@2x.jpg 2x">
+                <img class="photo__image" src="./img/bridge-mobile.jpg" width="400" height="267" srcset="./img/bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+              </picture>
             </a>
             <figcaption class="photo__description">
               <p class="photo__name">Мост дьявола</p>

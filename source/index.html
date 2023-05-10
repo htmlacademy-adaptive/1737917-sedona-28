@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="container">
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo main-nav__logo--active">
+        <a class="main-nav__logo">
           <img class="main-nav__logo-image" src="./img/logo.svg" width="185" height="96"
             alt="Логотип сайта города Седона.">
         </a>
@@ -20,8 +24,8 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item ">
-            <a class="main-nav__link main-nav__link--active">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -131,8 +135,15 @@
               <p class="feature__description feature__description--dark-theme">Седона не аттракцион для туристов, там
                 течет своя жизнь</p>
             </div>
-            <img class="advantages__image" src="./img/photo-city.jpg" width="800" height="256"
-              alt="Седона-центр, который находится в самом центре верхней части города Седона.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/photo-city-desktop.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/photo-city-tablet.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="./img/photo-city-mobile.jpg" width="800" height="256"
+                srcset="./img/photo-city-mobile@2x.jpg 2x"
+                alt="Седона-центр, который находится в самом центре верхней части города Седона.">
+            </picture>
             <ul class="advantages__sublist">
               <li class="feature feature--sublist feature--living">
                 <h4 class="feature__title feature__title--sublist">Жилье</h4>
@@ -158,8 +169,14 @@
               <p class="feature__description feature__description--dark-theme">Да, по нему можно пройти!<br> Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="advantages__image" src="./img/photo-bridge.jpg" width="800" height="256"
-              alt="Мост Дьявола в Седоне.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/photo-bridge-desktop.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/photo-bridge-tablet.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="./img/photo-bridge-mobile.jpg" width="800" height="256"
+                srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола в Седоне.">
+            </picture>
           </li>
           <li class="advantages__item">
             <div class="advantages__description feature feature--underline">
@@ -198,8 +215,12 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419081.4205192164!2d-111.795138!3d34.854378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682969468968!5m2!1sru!2sru"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img class="map__image map__image--nojs" src="./img/map-desktop.jpg" width="1200" height="350"
-          alt="Карта расположения города Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+          <img class="map__image map__image--nojs" src="./img/map-mobile.jpg" width="1200" height="350"
+            srcset="./img/map-mobile@2x.jpg 2x" alt="Карта расположения города Седона">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
