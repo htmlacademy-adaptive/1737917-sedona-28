@@ -1,5 +1,5 @@
 .response {
-  margin: 0 20px 55px;
+  margin: 0 20px 58px;
 
   @media (min-width: $tablet-width) {
     margin: 0 60px 100px;
@@ -121,11 +121,11 @@
 
     @media (min-width: $tablet-width) {
       grid-area: 3/1/4/-1;
-      margin-bottom: 42px;
+      margin-bottom: 26px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 56px;
+      margin-bottom: 42px;
     }
 
     & > .response__field-list {
@@ -145,11 +145,15 @@
   }
 
   &:nth-child(5) {
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 
     @media (min-width: $tablet-width) {
       grid-area: 4/1/5/-1;
-      margin-bottom: 48px;
+      margin-bottom: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 47px;
     }
   }
 }
@@ -233,6 +237,12 @@
       }
     }
   }
+
+  &--margin-bottom {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
+    }
+  }
 }
 
 .response__field {
@@ -286,6 +296,12 @@
   padding-left: 16px;
 
   text-transform: uppercase;
+
+  &--padding-left {
+    @media (min-width: $desktop-width) {
+      padding-left: 30px;
+    }
+  }
 }
 
 .response__input {
@@ -376,6 +392,8 @@
 }
 
 .response__button {
+  font-size: 18px;
+
   @media (min-width: $desktop-width) {
     margin-left: 96px;
   }

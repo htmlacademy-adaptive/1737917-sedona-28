@@ -1,12 +1,35 @@
 .video {
-  margin: 0 20px 33px;
+  position: relative;
+
+  margin: 0 20px 28px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 60px 76px;
+    margin: 0 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 200px 120px;
+    margin: 0 200px 115px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    width: 0;
+    height: 0;
+    margin: auto;
+
+    border-top: 27px solid transparent;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 27px solid transparent;
+
+    @media (min-width: $tablet-width) {
+      bottom: 230px;
+    }
   }
 }
 
@@ -22,11 +45,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 102px 25px;
+    font-size: 30px;
+
+    margin: 0 102px 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 177px 25px;
+    margin: 0 177px 35px;
   }
 }
 
@@ -40,11 +65,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0 102px 70px;
+    margin: 0 102px 83px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 177px 68px;
+    margin: 0 177px 81px;
   }
 }
 
@@ -53,9 +78,14 @@
   height: 177px;
   object-fit: cover;
 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
+
+    filter: none;
   }
 
   @media (min-width: $desktop-width) {

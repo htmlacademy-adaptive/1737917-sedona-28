@@ -1,13 +1,17 @@
 .advantages {
-  margin-bottom: 38px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 60px;
   }
 }
 
 .advantages__header {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
@@ -109,12 +113,11 @@
 
 .advantages__image {
   width: 320px;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 512px;
-    height: 256px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,7 +127,7 @@
 
 .advantages__sublist {
   padding: 0;
-  margin: 23px 18px 21px;
+  margin: 23px 18px 20px;
 
   list-style: none;
 

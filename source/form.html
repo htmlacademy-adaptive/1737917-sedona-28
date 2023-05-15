@@ -12,7 +12,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body ">
+<body class="page__body">
   <div class="container">
     <header class="main-header main-header--form">
       <nav class="main-nav main-nav--closed main-nav--nojs main-nav--inner">
@@ -24,10 +24,10 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item ">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item ">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
@@ -68,7 +68,9 @@
         </p>
         <form class="response__form" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="response__field-group">
-            <legend class="response__field-group-title">Представьтесь:</legend>
+            <legend class="response__field-group-title">
+              Представьтесь:
+            </legend>
             <p class="response__field">
               <label class="response__input-label" for="name">Имя*:</label>
               <input class="response__input" type="text" name="name" id="name" value="Пётр" required>
@@ -83,20 +85,26 @@
             </p>
           </fieldset>
           <fieldset class="response__field-group">
-            <legend class="response__field-group-title">Контактная информация:</legend>
+            <legend class="response__field-group-title">
+              Контактная информация:
+            </legend>
             <p class="response__field response__field--phone">
-              <label class="response__input-label" for="phone">Контактный телефон*:</label>
+              <label class="response__input-label response__input-label--padding-left" for="phone">Контактный
+                телефон*:</label>
               <input class="response__input response__input--contact" type="tel" name="phone" id="phone"
                 placeholder="Введите телефон" required>
             </p>
             <p class="response__field response__field--email">
-              <label class="response__input-label" for="email">Электронная почта*:</label>
+              <label class="response__input-label response__input-label--padding-left" for="email">Электронная
+                почта*:</label>
               <input class="response__input response__input--contact" type="email" name="email" id="email"
                 placeholder="Введите e-mail" required>
             </p>
           </fieldset>
           <fieldset class="response__field-group">
-            <legend class="response__field-group-title response__field-group-title--border">Ваше общее впечатление:
+            <legend
+              class="response__field-group-title response__field-group-title--border response__field-group-title--margin-bottom">
+              Ваше общее впечатление:
             </legend>
             <ul class="response__field-list">
               <li class="response__field-item">
@@ -126,8 +134,10 @@
             </ul>
           </fieldset>
           <fieldset class="response__field-group">
-            <legend class="response__field-group-title response__field-group-title--border">Посещенные<br>
-              достопримечательности:</legend>
+            <legend class="response__field-group-title response__field-group-title--border">
+              Посещенные<br>
+              достопримечательности:
+            </legend>
             <ul class="response__field-list">
               <li class="response__field-item">
                 <label class="response__input-label control">
@@ -162,14 +172,17 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="response__field-group ">
-            <legend class="response__field-group-title response__field-group-title--border">Опишите свои эмоции:
+          <fieldset class="response__field-group">
+            <legend class="response__field-group-title response__field-group-title--border">
+              Опишите свои эмоции:
             </legend>
             <label class="visually-hidden" for="textarea-emotion">Опишите свои эмоции</label>
             <textarea class="response__textarea" name="emotion" id="textarea-emotion" cols="25" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="response__button button" type="submit">Отправить отзыв</button>
+          <button class="response__button button" type="submit">
+            Отправить отзыв
+          </button>
           <p class="response__footnote">* — Обязательные поля</p>
         </form>
       </section>
@@ -215,7 +228,9 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">Разработано <span class="visually-hidden">в HTML academy.</span></p>
+          <p class="copyright__text">
+            Разработано <span class="visually-hidden">в HTML academy.</span>
+          </p>
           <svg class="copyright__icon" width="27" height="36" viewBox="0 0 27 36" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -225,7 +240,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal--failure ">
+    <div class="modal modal--failure">
       <h2 class="visually-hidden">Сообщение об ошибке</h2>
       <p class="modal__title modal__title--failure">Что-то пошло не так!</p>
       <p class="modal__text modal__text--failure">
@@ -234,7 +249,7 @@
       </p>
       <button class="button button--failure" type="button">ОК</button>
     </div>
-    <div class="modal modal--success ">
+    <div class="modal modal--success">
       <h2 class="visually-hidden">Сообщение об успешной отправке отзыва</h2>
       <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
       <p class="modal__text modal__text--success">

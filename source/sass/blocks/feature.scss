@@ -9,8 +9,12 @@
     padding: 41px 33px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 55px 33px;
+  }
+
   &--dark-theme {
-    padding: 54px 20px 46px;
+    padding: 37px 20px 40px;
 
     background-color: #81b3d2;
 
@@ -144,6 +148,36 @@
       background-size: 77.46px 75px;
     }
   }
+
+  &--white-top {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 17px;
+    }
+  }
+
+  &--white-top::before {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      border-top: 16px solid #ffffff;
+      border-left: 160px solid transparent;
+    }
+  }
+
+  &--white-top::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+
+      border-top: 16px solid #ffffff;
+      border-right: 160px solid transparent;
+    }
+  }
 }
 
 .feature__title {
@@ -156,6 +190,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 
   & > br {
     display: none;
@@ -175,6 +213,8 @@
     text-align: left;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+
       text-align: center;
     }
   }
@@ -182,13 +222,23 @@
 
 .feature__number {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 
   text-align: center;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
   &--dark-theme {
     color: #ffffff;
+  }
+
+  &--bigger-padding-bottom {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -201,13 +251,21 @@
   & > br {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: inline;
     }
   }
 
   &--dark-theme {
     color: #ffffff;
+
+    & > br {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: inline;
+      }
+    }
   }
 
   &--sublist {
@@ -215,6 +273,12 @@
 
     @media (min-width: $tablet-width) {
       text-align: center;
+    }
+  }
+
+  &--add-padding-left-right {
+    @media (max-width: $mobile-width-only) {
+      padding: 0 15px;
     }
   }
 }
