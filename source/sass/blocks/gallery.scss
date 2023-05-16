@@ -1,8 +1,8 @@
 .gallery {
-  margin: 0 20px 17px;
+  margin: 0 20px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 60px 58px;
+    margin: 0 60px 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,17 +13,25 @@
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 38px;
 
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 95px 67px;
+    margin: 0 95px 80px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 372px 65px;
+    margin: 0 372px 83px;
+  }
+
+  & > br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 }
 

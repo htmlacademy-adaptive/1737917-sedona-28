@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 124px 28px;
 
-    font-size: 30px;
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,4 +27,14 @@
 
 .main-container--inner .main-container__title {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
 }
