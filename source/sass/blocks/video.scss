@@ -10,27 +10,6 @@
   @media (min-width: $desktop-width) {
     margin: 0 200px 115px;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 65px;
-    left: 0;
-    right: 0;
-    z-index: 2;
-
-    width: 0;
-    height: 0;
-    margin: auto;
-
-    border-top: 27px solid transparent;
-    border-left: 48px solid rgba(255, 255, 255, 0.7);
-    border-bottom: 27px solid transparent;
-
-    @media (min-width: $tablet-width) {
-      bottom: 230px;
-    }
-  }
 }
 
 .video__header {
@@ -90,5 +69,30 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+  }
+}
+
+.video__button {
+  position: absolute;
+  content: "";
+  bottom: 65px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: auto;
+
+  background-color: transparent;
+  border: 0;
+  border-top: 27px solid transparent;
+  border-left: 48px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 27px solid transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    bottom: 230px;
   }
 }

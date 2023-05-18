@@ -101,7 +101,10 @@
               <p class="photo__author">
                 Автор фото: <cite class="photo__author-name">Борис</cite>
               </p>
-              <p class="photo__likes">1350</p>
+              <div class="photo__likes-wrapper">
+                <button class="photo__likes-button" type="button"><span class="visually-hidden">Добавить лайк.</span></button>
+                <span class="photo__likes-counter">1350</span>
+              </div>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -136,7 +139,10 @@
               <p class="photo__author">
                 Автор фото: <cite class="photo__author-name">Сергей</cite>
               </p>
-              <p class="photo__likes">143</p>
+              <div class="photo__likes-wrapper">
+                <button class="photo__likes-button" type="button"><span class="visually-hidden">Добавить лайк.</span></button>
+                <span class="photo__likes-counter">143</span>
+              </div>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -171,7 +177,10 @@
               <p class="photo__author">
                 Автор фото: <cite class="photo__author-name">Петр</cite>
               </p>
-              <p class="photo__likes">96</p>
+              <div class="photo__likes-wrapper">
+                <button class="photo__likes-button" type="button"><span class="visually-hidden">Добавить лайк.</span></button>
+                <span class="photo__likes-counter">96</span>
+              </div>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -206,7 +215,10 @@
               <p class="photo__author">
                 Автор фото: <cite class="photo__author-name">Антон</cite>
               </p>
-              <p class="photo__likes">254</p>
+              <div class="photo__likes-wrapper">
+                <button class="photo__likes-button" type="button"><span class="visually-hidden">Добавить лайк.</span></button>
+                <span class="photo__likes-counter">254</span>
+              </div>
             </figcaption>
           </figure>
         </div>
@@ -222,6 +234,9 @@
         </p>
         <video class="video__player" src="./img/video-desktop.jpg" width="800" height="500"
           poster="./img/video-desktop.jpg"></video>
+        <button class="video__button" type="button">
+          <span class="visually-hidden">Начать воспроизведение видео.</span>
+        </button>
       </section>
     </main>
     <footer class="main-footer">
