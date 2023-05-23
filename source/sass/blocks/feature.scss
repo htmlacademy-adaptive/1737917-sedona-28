@@ -6,11 +6,11 @@
   background-color: #eeeeee;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 33px;
+    padding: 45px 33px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 55px 33px;
+  @media (min-width: $desktop-width) {
+    padding: 53px 40px;
   }
 
   &--dark-theme {
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 52px 55px 51px;
+      padding: 54px 55px 53px;
     }
   }
 
