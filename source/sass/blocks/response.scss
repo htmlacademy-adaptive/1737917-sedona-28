@@ -49,13 +49,13 @@
 
     @media (min-width: $tablet-width) {
       grid-area: 1/1/2/2;
-      margin-right: 43px;
+      margin-right: 28px;
 
       &::after {
         position: absolute;
         content: "";
-        top: -54px;
-        right: -43px;
+        top: -63px;
+        right: -28px;
 
         width: 1px;
         height: 338px;
@@ -63,13 +63,13 @@
         background-color: #dbdbdb;
 
         @media (min-width: $desktop-width) {
-          right: -63px;
+          right: -50px;
         }
       }
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 63px;
+      margin-right: 50px;
       margin-bottom: 71px;
     }
   }
@@ -80,11 +80,11 @@
     @media (min-width: $tablet-width) {
       grid-area: 1/2/2/3;
       margin-bottom: 64px;
-      margin-left: 44px;
+      margin-left: 29px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 64px;
+      margin-left: 50px;
       margin-bottom: 64px;
     }
   }
@@ -109,8 +109,8 @@
       }
 
       @media (min-width: $desktop-width) {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 28px;
+        display: flex;
+        justify-content: space-between;
         margin: 0 53px;
       }
     }
@@ -178,14 +178,6 @@
     margin-bottom: 28px;
 
     font-size: 21px;
-  }
-
-  & > br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
   }
 
   &::before {
@@ -296,12 +288,6 @@
   padding-left: 16px;
 
   text-transform: uppercase;
-
-  &--padding-left {
-    @media (min-width: $desktop-width) {
-      padding-left: 30px;
-    }
-  }
 }
 
 .response__input {
@@ -309,6 +295,7 @@
   padding: 16px;
   box-sizing: border-box;
 
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -348,6 +335,7 @@
   margin: 0;
   resize: none;
 
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -392,7 +380,7 @@
 }
 
 .response__button {
-  font-size: 18px;
+  font-size: 21px;
 
   @media (min-width: $desktop-width) {
     margin-left: 96px;
