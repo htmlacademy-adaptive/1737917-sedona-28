@@ -10,6 +10,7 @@
 
   &:hover {
     color: #81b3d2;
+
     & > .copyright__icon path {
       fill: #81b3d2;
     }
@@ -17,6 +18,7 @@
 
   &:active {
     color: #b3b3b3;
+
     & > .copyright__icon path {
       fill: #b3b3b3;
     }
